@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="616.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane layoutX="124.0" layoutY="53.0" minHeight="50.0" minWidth="200.0" prefHeight="172.0" prefWidth="350.0" style="-fx-background-color: #b3ecff;">
+         <children>
+            <HBox layoutX="14.0" layoutY="14.0" prefHeight="76.0" prefWidth="271.0">
+               <children>
+                  <Label fx:id="hourLabel" text="23">
+                     <font>
+                        <Font name="Bodoni MT" size="52.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" text=":" textFill="RED">
+                     <font>
+                        <Font name="Algerian" size="40.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="minLabel" text="56">
+                     <font>
+                        <Font name="Bodoni MT" size="52.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" textFill="RED">
+                     <font>
+                        <Font name="Algerian" size="40.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="secLabel" alignment="CENTER" text="56">
+                     <font>
+                        <Font name="Bodoni MT" size="52.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amPm" alignment="CENTER" text="AM">
+                     <font>
+                        <Font name="Aldhabi" size="35.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fitHeight="295.0" fitWidth="247.0" layoutX="202.0" layoutY="-53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/tree.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="362.0" layoutY="174.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnExit" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: TRANSPARENT;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/shutdown_80px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="-1.0" layoutY="82.0" prefHeight="60.0" prefWidth="321.0" text="زمان تذکر و تلنگر است تا در کوچه های بلا تکلیفی زندگی رها نباشیم" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
